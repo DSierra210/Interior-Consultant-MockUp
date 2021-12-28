@@ -3,12 +3,12 @@
 <h1 align="center">Interior Consultant Challenge</h1>
 
 <div align="center">
-   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank" rel="noopener noreferrer">Devchallenges.io</a>.
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://dsierra210.github.io/Interior-Consultant-MockUp/">
+    <a href="https://dsierra210.github.io/Interior-Consultant-MockUp/" target="_blank" rel="noopener noreferrer">
       Demo
     </a>
     <span> | </span>
@@ -16,7 +16,7 @@
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb">
+    <a href="https://devchallenges.io/challenges/Jymh2b2FyebRTUljkNcb" target="_blank" rel="noopener noreferrer">
       Challenge
     </a>
   </h3>
