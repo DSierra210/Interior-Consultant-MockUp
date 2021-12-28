@@ -1,0 +1,229 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #101010;
+  color: #fff;
+}
+
+/* Header */
+
+#mainNav .navbar-brand {
+  font-size: 0.67rem;
+  letter-spacing: 1px;
+  font-family: "PT Serif", serif;
+}
+
+.iconDesign {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.iconDesign:hover {
+  cursor: pointer;
+}
+
+/* Section */
+
+h1 {
+  font-family: "PT Serif", serif;
+  font-size: 2rem;
+  margin: 32px auto;
+}
+
+section p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 24px 0;
+}
+
+.readMore {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.designCredit {
+  background-color: #232323;
+  max-width: 27em;
+  position: relative;
+  z-index: 1;
+  bottom: 1em;
+}
+
+.designCredit img {
+  width: 60px;
+  float: left;
+  margin: 15px 20px 15px 5px;
+}
+
+.designerName {
+  font-size: 0.96rem;
+}
+
+.designerTitle {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.designerText {
+  margin: 3px 0 0;
+  padding-bottom: 20px;
+  font-weight: 500;
+  width: 80%;
+}
+
+/* Footer  */
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 6px 2px;
+}
+
+footer p,
+.footer-link {
+  color: #6c757d;
+  font-size: 0.87rem;
+}
+
+.footer-link:first-child {
+  font-weight: bold;
+}
+
+.footer-link:nth-child(2) {
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+  .navbar-brand-toggle {
+    display: none;
+  }
+
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #101010;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+  }
+
+  .overlay .navbar-nav {
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .overlay .nav-link {
+    margin-bottom: 36px;
+  }
+
+  .overlay .nav-link:hover {
+    border-bottom: 2px solid white;
+    cursor: pointer;
+  }
+
+  .iconDesign {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTIxLjUsMzUuODMzMzNjLTIuNTg0NTYsLTAuMDM2NTUgLTQuOTg4NTgsMS4zMjEzNiAtNi4yOTE1MywzLjU1Mzc2Yy0xLjMwMjk1LDIuMjMyNCAtMS4zMDI5NSw0Ljk5MzQyIDAsNy4yMjU4MmMxLjMwMjk1LDIuMjMyNCAzLjcwNjk3LDMuNTkwMzEgNi4yOTE1MywzLjU1Mzc2aDEyOWMyLjU4NDU2LDAuMDM2NTUgNC45ODg1OCwtMS4zMjEzNiA2LjI5MTUzLC0zLjU1Mzc2YzEuMzAyOTUsLTIuMjMyNCAxLjMwMjk1LC00Ljk5MzQyIDAsLTcuMjI1ODJjLTEuMzAyOTUsLTIuMjMyNCAtMy43MDY5NywtMy41OTAzMSAtNi4yOTE1MywtMy41NTM3NnpNMjEuNSw3OC44MzMzM2MtMi41ODQ1NiwtMC4wMzY1NSAtNC45ODg1OCwxLjMyMTM2IC02LjI5MTUzLDMuNTUzNzZjLTEuMzAyOTUsMi4yMzI0IC0xLjMwMjk1LDQuOTkzNDIgMCw3LjIyNTgyYzEuMzAyOTUsMi4yMzI0IDMuNzA2OTcsMy41OTAzMSA2LjI5MTUzLDMuNTUzNzZoMTI5YzIuNTg0NTYsMC4wMzY1NSA0Ljk4ODU4LC0xLjMyMTM2IDYuMjkxNTMsLTMuNTUzNzZjMS4zMDI5NSwtMi4yMzI0IDEuMzAyOTUsLTQuOTkzNDIgMCwtNy4yMjU4MmMtMS4zMDI5NSwtMi4yMzI0IC0zLjcwNjk3LC0zLjU5MDMxIC02LjI5MTUzLC0zLjU1Mzc2ek0yMS41LDEyMS44MzMzM2MtMi41ODQ1NiwtMC4wMzY1NSAtNC45ODg1OCwxLjMyMTM2IC02LjI5MTUzLDMuNTUzNzZjLTEuMzAyOTUsMi4yMzI0IC0xLjMwMjk1LDQuOTkzNDIgMCw3LjIyNTgyYzEuMzAyOTUsMi4yMzI0IDMuNzA2OTcsMy41OTAzMSA2LjI5MTUzLDMuNTUzNzZoMTI5YzIuNTg0NTYsMC4wMzY1NSA0Ljk4ODU4LC0xLjMyMTM2IDYuMjkxNTMsLTMuNTUzNzZjMS4zMDI5NSwtMi4yMzI0IDEuMzAyOTUsLTQuOTkzNDIgMCwtNy4yMjU4MmMtMS4zMDI5NSwtMi4yMzI0IC0zLjcwNjk3LC0zLjU5MDMxIC02LjI5MTUzLC0zLjU1Mzc2eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+")
+      50% 50% no-repeat;
+  }
+
+  .closeMenu {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTMzLjczMzcyLDIzLjU5OTYxbC0xMC4xMzQxMSwxMC4xMzQxMWw1Mi4yNjYyOCw1Mi4yNjYyOGwtNTIuMjY2MjgsNTIuMjY2MjhsMTAuMTM0MTEsMTAuMTM0MTFsNTIuMjY2MjgsLTUyLjI2NjI4bDUyLjI2NjI4LDUyLjI2NjI4bDEwLjEzNDExLC0xMC4xMzQxMWwtNTIuMjY2MjgsLTUyLjI2NjI4bDUyLjI2NjI4LC01Mi4yNjYyOGwtMTAuMTM0MTEsLTEwLjEzNDExbC01Mi4yNjYyOCw1Mi4yNjYyOHoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==")
+      50% 50% no-repeat;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    margin-bottom: 100px;
+  }
+
+  #mainNav .navbar-brand {
+    font-size: 0.87rem;
+  }
+
+  .modernInterior {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 494px;
+  }
+
+  h1,
+  .interiorText {
+    width: 75%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  section p {
+    font-size: 1.15rem;
+    margin: 24px auto;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  header {
+    margin-bottom: 100px;
+  }
+
+  .modernInterior {
+    height: 716px;
+  }
+
+  h1,
+  .interiorText {
+    width: 55%;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  section p {
+    font-size: 1.5rem;
+  }
+
+  .readMore {
+    font-size: 1.15rem;
+  }
+
+  .designCredit {
+    left: 10em;
+    bottom: 5em;
+  }
+}
