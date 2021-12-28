@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://dsierra210.github.io/Team-Page-devChallenges.io/">
+    <a href="https://dsierra210.github.io/Interior-Consultant-MockUp/">
       Demo
     </a>
     <span> | </span>
