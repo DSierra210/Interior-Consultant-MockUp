@@ -12,7 +12,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/DSierra210/Team-Page-devChallenges.io/blob/main/index.html">
+    <a href="https://github.com/DSierra210/Interior-Consultant-MockUp/blob/main/index.html">
       Solution
     </a>
     <span> | </span>
